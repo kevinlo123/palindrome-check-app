@@ -1,0 +1,112 @@
+/* Roboto font import (Google Fonts CDN) */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+
+* {
+    font-weight: 100;    
+}
+
+html {
+    font-size: 15px;
+    font-family: "Roboto" , sans-serif;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #ac0008, #ff003b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(90deg, #ac0008, #ff003b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(90deg, #ac0008, #ff003b); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(90deg, #ac0008, #ff003b); /* Standard syntax */
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+    top: 7.5rem;
+}
+
+.check_Word_Text {
+    font-size: 3rem;
+}
+
+#user_Input {
+    border: 1px solid rgba(255,255,255, 0.3);
+    background-color: transparent;
+    border-radius: 2px;
+    color: #fff;
+    padding: 7px;
+    font-size: 20px;
+    margin-right: 0;
+    border-right: none;
+    transition: all 300ms ease-in-out;
+    background-color: rgba(0,0,0,0.1);
+}
+
+#user_Input::placeholder {
+    color: #fff;
+}
+
+#user_Input:focus ,  #user_submit:focus {
+    outline: none;
+    border:1px solid #fff !important;
+    box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.5);
+}
+ 
+ #user_submit {
+   padding: 7px;
+   font-size: 20px;
+   margin-left: -5px;
+   background-color: transparent;
+   border: 1px solid rgba(255,255,255, 0.3);
+   cursor: pointer;
+   border-top-right-radius: 2px;
+   border-bottom-right-radius: 2px;
+   color: #fff;
+}
+
+.fa-chevron-right {
+    transition: 200ms ease-in-out;
+}
+  
+button:hover .fa-chevron-right {
+    transform: scale(1.3);
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 105px solid transparent;
+    border-right: 105px solid transparent;
+    border-bottom: 105px solid #fff;
+    position: relative;
+    bottom: -339px;
+    left: -104px;
+    transform: rotate(0deg);
+}
+  
+.fa-github {
+    color: red;
+    position: relative;
+    top: 52px;
+    left: 15px;
+    transform: scale(2.3);
+    transition: all 300ms ease-in-out;
+}
+  
+.fa-github:hover {
+    color: #222;
+}
+
+@media only screen and (max-width : 400px) {
+    .check_Word_Text {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+ 
