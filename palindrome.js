@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded",() => {
     const userSubmit = document.getElementById("user_submit");
     let userResponse= document.getElementById("user_Response"); 
          
-    const checkIfPalindrome = () => {
+    const checkIfPalindrome = (event) => {
         event.preventDefault();
         let usersWord = userInput.value;        
         let usersWordReversed = usersWord.split("").reverse().join("");            
