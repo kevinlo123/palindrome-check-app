@@ -82,8 +82,8 @@ button:hover .fa-chevron-right {
     border-left: 105px solid transparent;
     border-right: 105px solid transparent;
     border-bottom: 105px solid #fff;
-    position: relative;
-    bottom: -339px;
+    position: absolute;
+    bottom: -470px;
     left: -104px;
     transform: rotate(0deg);
 }

@@ -4,18 +4,22 @@ document.addEventListener("DOMContentLoaded",() => {
     let userResponse= document.getElementById("user_Response"); 
          
     const checkIfPalindrome = () => {
+        event.preventDefault();
         let usersWord = userInput.value;        
         let usersWordReversed = usersWord.split("").reverse().join("");            
-        userInput.value = "";
         if(usersWord === usersWordReversed ){
             console.log(usersWord);
             console.log(usersWordReversed); 
-            userResponse.innerHTML = "Your word was a palindrome";
+            userResponse.innerHTML = "Your word " + '"' + usersWord + '"' + " was a palindrome.";
         }else{
             console.log(usersWord);
             console.log(usersWordReversed);
-            userResponse.innerHTML = "Your word was not palindrome";
-        }   
+            userResponse.innerHTML = "Your word " + '"' + usersWord + '"' + " was not a palindrome.";
+        }
+        if(usersWord === ""){
+            alert("please input a word");
+            userResponse.innerHTML = "";           
+        }  
     }  
     userSubmit.addEventListener("click" , checkIfPalindrome) ;    
 });
